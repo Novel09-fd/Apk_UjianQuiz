@@ -8,6 +8,8 @@
     android:orientation="vertical"
     tools:context=".Tampilan">
 
+
+
     <ImageButton
         android:id="@+id/btnImg"
         android:layout_width="350dp"

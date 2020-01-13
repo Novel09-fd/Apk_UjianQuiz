@@ -2,8 +2,10 @@ package com.example.Apk_UjianQuiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,6 +44,9 @@ public class question_activity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_activity);
 
+
+        getSupportActionBar().setTitle("Game gambar");
+
         btnA = findViewById(R.id.btn_A);
         btnB = findViewById(R.id.btn_B);
         btnC = findViewById(R.id.btn_C);
@@ -62,7 +67,11 @@ public class question_activity extends AppCompatActivity implements View.OnClick
         btnB.setOnClickListener(this);
         btnC.setOnClickListener(this);
         btnD.setOnClickListener(this);
+
+
     }
+
+
 
     APIInterfacesRest apiInterface;
     ProgressDialog progressDialog;

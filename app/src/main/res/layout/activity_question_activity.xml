@@ -4,9 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:orientation="vertical"
     tools:context="com.example.Apk_UjianQuiz.question_activity">
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Game Gambar"
+        android:id="@+id/toolbar_text"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
 
     <TextView
         android:id="@+id/txt_Question"

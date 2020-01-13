@@ -115,5 +115,6 @@ public class Score extends AppCompatActivity {
             }
         });
     }
+
 }
 
